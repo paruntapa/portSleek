@@ -1,4 +1,3 @@
-import { div } from 'framer-motion/client'
 import React, { createElement } from 'react'
 import { FaReact } from 'react-icons/fa'
 import { IoLogoNodejs } from 'react-icons/io'
