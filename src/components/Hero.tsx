@@ -4,7 +4,6 @@ import { animate, useMotionTemplate, useMotionValue } from "framer-motion";
 import { useEffect } from "react";
 import { motion } from "motion/react";
 import Image from "next/image";
-import { FiArrowRight } from "react-icons/fi";
 
 const COLORS_TOP = ["#13ff46", "#1e39cf", "#e63956", "#e65f29"];
 
@@ -21,8 +20,8 @@ const Hero = () => {
   }, [color]);
 
   const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, #000 50%, ${color})`;
-  const border = useMotionTemplate`1px solid ${color}`;
-  const boxShadow = useMotionTemplate`0px 4px 24px ${color}`;
+  // const border = useMotionTemplate`1px solid ${color}`;
+  // const boxShadow = useMotionTemplate`0px 4px 24px ${color}`;
 
   return (
     <motion.section
