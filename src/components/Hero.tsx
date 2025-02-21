@@ -32,10 +32,16 @@ const Hero = () => {
       className="rounded-2xl relative grid min-h-screen place-content-center overflow-hidden px-4 py-24 text-gray-200"
     >
       <div className="mt-2 z-10 flex flex-col items-center">
-        <span className="mb-1.5 inline-block rounded-full bg-gray-600/50 px-3 py-1.5 text-sm">
+        <motion.span  whileHover={{
+            scale: 1.2,
+          }}
+          whileTap={{
+            scale: 1,
+          }} 
+          className="mb-1.5 inline-block cursor-pointer rounded-full bg-green-600 hover:bg-green-600/50 px-3 py-1.5 text-sm">
           Open for Work
-        </span>
-        <h1 className="text-white/40 text-5xl  md:text-7xl font-black"> Namaste, I am</h1>
+        </motion.span>
+        <h1 className="text-white/40 text-5xl cursor-pointer  md:text-7xl font-black"> Namaste, I am</h1>
         <h1
           className="max-w-3xl bg-gradient-to-br from-white to-gray-400 bg-clip-text font-black leading-tight
                 text-transparent text-5xl  md:text-7xl"
@@ -65,14 +71,14 @@ const Hero = () => {
               alt="object"
               width={30}
               height={30}
-              className="rounded-2xl mx-auto ml-0"
+              className={`rounded-2xl mx-auto ml-0  hover:mr-0 hover:ml-3`}
             />
             <Image
               src={"/obj1.png"}
               alt="object"
               width={30}
               height={30}
-              className="rounded-2xl mx-auto ml-0"
+              className="rounded-2xl mx-auto  ml-0"
             />
           </div>
           <div className="line-clamp-2 text-center">
@@ -80,11 +86,10 @@ const Hero = () => {
           </div>
         </div>
         <p className="my-6 max-w-xl text-center font-extralight">
-          Fullstack Developer based in India, with over an year of experience in
-          the industry.
+          creative software developer
         </p>
 
-        <motion.button
+        {/* <motion.button
           style={{
             border,
             boxShadow,
@@ -99,7 +104,7 @@ const Hero = () => {
         >
           Download CV
           <FiArrowRight className="" />
-        </motion.button>
+        </motion.button> */}
       </div>
 
       <div className="bg-circle-container">
